@@ -31,6 +31,8 @@ resources = {
     "coffee": 100,
 }
 
+# TODO: 1. Check the resources are suffiencnt
+
 
 def is_resources_sufficient(order_ingredients):
     """
@@ -41,6 +43,8 @@ def is_resources_sufficient(order_ingredients):
             print(f"Sorry there is not enough {item}.")
             return False
     return True
+
+# TODO: 2. Procee the User's coin and calculate total amount
 
 
 def process_coines():
@@ -53,6 +57,10 @@ def process_coines():
     total += int(input("how many nickles?: ")) * 0.05
     total += int(input("how many pennies?: ")) * 0.01
     return total
+
+
+# TODO: 3. Check the transaction and return change if excess amount paid by
+# the user and add the drink amount into the profit
 
 
 def is_transactions_successful(money_received, drink_cost):
@@ -68,6 +76,8 @@ def is_transactions_successful(money_received, drink_cost):
     else:
         print("Sorry that's not enoigh money, Money refunded")
 
+# TODO: 4 Make coffee based on the user choice and detuct in the resource
+
 
 def make_coffee(drink_name, order_ingredients):
     """
@@ -79,6 +89,11 @@ def make_coffee(drink_name, order_ingredients):
 
 
 is_on = True
+
+
+# TODO: 5 run on a while loop, take input from the user for the drink name,
+# create report, and process coins, check transaction and resources
+
 
 while is_on:
     choice = input("What would you like? (espresso/latte/cappuccine): ")
