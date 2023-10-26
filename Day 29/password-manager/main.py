@@ -1,4 +1,3 @@
-from ctypes import alignment
 from tkinter import *  # type: ignore
 from tkinter import messagebox
 from random import choice, randint, shuffle
