@@ -1,0 +1,6 @@
+amazon | example@something.com | 12234
+Google | example@something.com | password
+ | example@something.com | 
+Facebook | example@something.com | tootooo
+ssss | example@something.com | ffff
+x.com | example@something.com | FGro4wC3+T)qU8
