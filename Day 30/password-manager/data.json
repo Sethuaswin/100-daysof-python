@@ -10,5 +10,17 @@
     "Twitter": {
         "email": "example@something.com",
         "password": "des+Er)W$I1V(1"
+    },
+    "Gmail_Dummy": {
+        "email": "dummytestemail6@gmail.com",
+        "password": "E(#h$fmvuHV!c32"
+    },
+    "Yahoo_Dummy": {
+        "email": "chummadummy_email@yahoo.com",
+        "password": "U1&#P28HR#YsGe"
+    },
+    "dummy_email": {
+        "email": "d26315258@gmail.com",
+        "password": "95pS$BNDs)H04M"
     }
 }
