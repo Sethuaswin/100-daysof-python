@@ -1,0 +1,31 @@
+/* Changing the font color using id selector */
+#red{
+    color: red;
+}
+
+#blue{
+    color: blue;
+}
+
+#orange{
+    color: orange;
+}
+
+#green{
+    color: green;
+}
+
+#yellow{
+    color: yellow;
+}
+
+/* Modifying the font weight using class selector */
+.color-title{
+    font-weight: normal;
+}
+
+/* Modifying the image using attribute selector */
+img[src]{
+    height: 200px;
+    width: 200px;
+}
