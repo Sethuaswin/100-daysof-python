@@ -22,7 +22,7 @@ jobs:
       - uses: BSFishy/pip-action@v1
         with:
           packages: |
-            python
+            pip
             bs4
             requests
             smtplib
