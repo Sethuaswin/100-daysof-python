@@ -26,4 +26,4 @@ jobs:
           MY_EMAIL_PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
           MY_TO_MAIL_ADDRESS: ${{ secrets.MY_TO_MAIL_ADDRESS }}
           
-        run: python "Day 47 - Amazon Price Tracker/main.py"
+        run: python "test/main.py"
