@@ -20,11 +20,11 @@ product_page = response.text
 
 soup = BeautifulSoup(product_page,'lxml')
 
-product_name = soup.find(name="span", id="productTitle").text.strip()  # type:ignore
+# product_name = soup.find(name="span", id="productTitle").text.strip()  # type:ignore
 price_text = soup.find(name="span", class_="a-price-whole").text.strip(".") # type:ignore
 price = int(price_text.replace(",",""))
 
-message = f"Subject:Amazon Price Alert\n\nProduct Name: {product_name}\nPrice: {price_text}\nPurchase Link: {URL}"
+message = f"Subject:Amazon Price Alert\n\nPrice: {price_text}\nPurchase Link: {URL}"
 
 if price < THRESHOLD_PRICE:
     with smtplib.SMTP("smtp.gmail.com") as connection:
