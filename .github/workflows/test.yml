@@ -18,6 +18,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v1
+      - uses: BSFishy/pip-action@v1
+        with:
+          packages: |
+            bs4
+            requests
+            smtplib
 
       # Runs a single command using the runners shell
       - name: Running Test Script with Secret Keys
@@ -25,7 +32,4 @@ jobs:
           MY_EMAIL: ${{ secrets.MY_EMAIL }}
           MY_EMAIL_PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
           MY_TO_MAIL_ADDRESS: ${{ secrets.MY_TO_MAIL_ADDRESS }}
-          
-        run: pip install bs4
-        run: pip install requests
         run: python "test/main.py"
