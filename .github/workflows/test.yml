@@ -23,6 +23,7 @@ jobs:
         with:
           packages: |
             pip
+            lxml
             bs4
             requests
 
