@@ -26,4 +26,6 @@ jobs:
           MY_EMAIL_PASSWORD: ${{ secrets.MY_EMAIL_PASSWORD }}
           MY_TO_MAIL_ADDRESS: ${{ secrets.MY_TO_MAIL_ADDRESS }}
           
+        run: pip install bs4
+        run: pip install requests
         run: python "test/main.py"
