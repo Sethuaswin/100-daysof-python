@@ -25,7 +25,6 @@ jobs:
             pip
             bs4
             requests
-            smtplib
 
       # Runs a single command using the runners shell
       - name: Running Test Script with Secret Keys
