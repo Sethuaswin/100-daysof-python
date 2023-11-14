@@ -1,3 +1,6 @@
+# This Coding exersice for Python decorators
+# Creating own decorator function to measure the amount of seconds that a function takes to execute
+
 import time
 current_time = time.time()
 print(current_time) # seconds since Jan 1st, 1970
